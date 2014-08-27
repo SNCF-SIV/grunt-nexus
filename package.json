@@ -1,10 +1,7 @@
 {
   "name": "grunt-nexus",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "A plugin for downloading tarballed artifacts from a Nexus repository",
-  "keywords": [
-    "gruntplugin", "nexus", "artifact"
-  ],
   "dependencies": {
     "tar": "0.1.18",
     "request": "2.27.0",
@@ -18,5 +15,19 @@
   "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:antoine-richard/grunt-nexus.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "nexus",
+    "artifact"
+  ],
+  "author": "Antoine Richard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antoine-richard/grunt-nexus/issues"
   }
 }
