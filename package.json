@@ -1,6 +1,6 @@
 {
   "name": "grunt-nexus",
-  "version": "2.0.0",
+  "version": "1.1.1",
   "description": "A plugin for downloading tarballed artifacts from a Nexus repository",
   "keywords": [
     "gruntplugin", "nexus", "artifact"
