@@ -8,10 +8,11 @@ var extract  = require('./util/extract');
 module.exports = function(grunt) {
 
   grunt.registerMultiTask('nexus', 'A plugin for downloading tarballed artifacts from a Nexus repository', function() {
-    var extension = ".tar.gz";
 
     // merge task-specific and/or target-specific options with these defaults
-    var options = this.options();
+    var options = this.options({
+      extension: '.tar.gz'
+    });
 
     // merge options onto data, with data taking precedence
     var data = this.data;
@@ -31,10 +32,10 @@ module.exports = function(grunt) {
         id: dependency,
         version: data.dependencies[dependency]
       };
-      var file = artifact.id + '-' + artifact.version + extension;
+      var file = artifact.id + '-' + artifact.version + data.extension;
       var url = data.baseUrl + '/' + data.repository + '/' + data.groupId + '/' + artifact.id + '/' + artifact.version + '/' + file;
       var dir = data.path + '/' + artifact.id;
-      var tempPath = temp.path({prefix: 'grunt-nexus-', suffix: extension});
+      var tempPath = temp.path({prefix: 'grunt-nexus-', suffix: data.extension});
 
       download(url, tempPath)
       .then(function() {
