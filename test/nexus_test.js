@@ -8,7 +8,7 @@ exports.nexus = {
     done();
   },
 
-  default_options: function(test) {
+  defaultOptions: function(test) {
     test.expect(2);
     
     test.equal(
@@ -26,7 +26,7 @@ exports.nexus = {
     test.done();
   },
 
-  custom_options: function(test) {
+  customOptions: function(test) {
     test.expect(1);
 
     test.equal(
