@@ -6,7 +6,6 @@
 # Note
 The v2.0.0 marks the public release.
 This plugin has been used privately on a Sonatype Nexus 2.8.x.
-Unit tests are coming soon.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
@@ -32,7 +31,7 @@ In your project's Gruntfile, add a section named `nexus` to the data object pass
 grunt.initConfig({
   nexus: {
     options: {
-      baseUrl:    'http://yourcompany/nexus/content/repositories',
+      baseUrl:    'http://ic.yourcompany.com/nexus/content/repositories',
       repository: 'web',
       groupId:    'com.yourcompany.components.web',
       path:       'src/main/components'
@@ -92,6 +91,8 @@ Default value: `.tar.gz`
 
 Artifacts extension.
 
+## Contributing
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
