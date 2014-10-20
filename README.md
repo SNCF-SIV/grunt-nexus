@@ -1,4 +1,4 @@
-# grunt-nexus v2.0.0
+# grunt-nexus v2.0.0 [![Build Status](https://travis-ci.org/antoine-richard/grunt-nexus.svg?branch=master)](https://travis-ci.org/antoine-richard/grunt-nexus)
 
 > A plugin for downloading tarballed artifacts from Sonatype's Nexus repository.  
 > Tested under Linux and Windows.
@@ -93,6 +93,11 @@ Artifacts extension.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+## Dependencies
+
+[![Dependency Status](https://david-dm.org/antoine-richard/grunt-nexus.svg)](https://david-dm.org/antoine-richard/grunt-nexus) 
+[![devDependency Status](https://david-dm.org/antoine-richard/grunt-nexus/dev-status.svg)](https://david-dm.org/antoine-richard/grunt-nexus#info=devDependencies)
 
 ## Release History
 
