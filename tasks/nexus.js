@@ -1,6 +1,3 @@
-'use strict';
-/* jshint unused:false */
-
 var temp     = require('temp');
 var download = require('./util/download');
 var extract  = require('./util/extract');
@@ -22,6 +19,9 @@ module.exports = function(grunt) {
     data.groupId = data.groupId.replace(/\./g, '/'); // dots to slashes
     data.baseUrl = data.baseUrl.replace(/\/?$/, ''); // remove trailing slash
     data.path = data.path.replace(/\/?$/, '');       // remove trailing slash
+    if (data.extension.match(/^[^\.]/)) {            // ensure extension starts with a dot
+      data.extension = '.' + data.extension;
+    }
 
     var done = this.async();
     var anErrorOccurred = false;
@@ -33,11 +33,11 @@ module.exports = function(grunt) {
         version: data.dependencies[dependency]
       };
       var file = artifact.id + '-' + artifact.version + data.extension;
-      var url = data.baseUrl + '/' + data.repository + '/' + data.groupId + '/' + artifact.id + '/' + artifact.version + '/' + file;
+      var uri = data.baseUrl + '/' + data.repository + '/' + data.groupId + '/' + artifact.id + '/' + artifact.version + '/' + file;
       var dir = data.path + '/' + artifact.id;
       var tempPath = temp.path({prefix: 'grunt-nexus-', suffix: data.extension});
 
-      download(url, tempPath)
+      download(uri, tempPath)
       .then(function() {
         return extract(tempPath, dir);
       })

@@ -1,9 +1,7 @@
-'use strict';
-
-var zlib    = require('zlib');
-var tar     = require('tar');
-var fs      = require('fs');
-var q       = require('q');
+var zlib = require('zlib');
+var tar  = require('tar');
+var fs   = require('fs');
+var q    = require('q');
 
 /**
  * Extracts a tar.gz
