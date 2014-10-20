@@ -1,16 +1,18 @@
-'use strict';
-
 var request = require('request');
 var fs      = require('fs');
 var q       = require('q');
 
 /**
- * Download a file from an url
+ * Download a file from an uri
  */
-module.exports = function(url, file) {
+module.exports = function(uri, file) {
   var deferred = q.defer();
 
-  request(url)
+  request({
+    method: 'GET',
+    uri: uri,
+    proxy: false
+  })
   .on('response', function (res) {
     if (res.statusCode < 200 || res.statusCode >= 300) {
       deferred.reject({ when: 'downloading', message: 'Response status ' + res.statusCode });
