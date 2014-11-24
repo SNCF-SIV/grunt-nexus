@@ -1,4 +1,4 @@
-# grunt-nexus v2.0.0 [![Build Status](https://travis-ci.org/antoine-richard/grunt-nexus.svg?branch=master)](https://travis-ci.org/antoine-richard/grunt-nexus)
+# grunt-nexus v2.0.1 [![Build Status](https://travis-ci.org/antoine-richard/grunt-nexus.svg?branch=master)](https://travis-ci.org/antoine-richard/grunt-nexus)
 
 > A plugin for downloading tarballed artifacts from Sonatype's Nexus repository.  
 > Tested under Linux and Windows.
@@ -101,4 +101,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2014-11-24   v2.0.1   Improved the extension option to be more robust.
  * 2014-08-28   v2.0.0   First public release.
