@@ -1,4 +1,4 @@
-# grunt-nexus v2.0.1 [![Build Status](https://travis-ci.org/antoine-richard/grunt-nexus.svg?branch=master)](https://travis-ci.org/antoine-richard/grunt-nexus)
+# grunt-nexus v2.0.1 [![Build Status](https://travis-ci.org/SNCF-SIV/grunt-nexus.svg?branch=master)](https://travis-ci.org/SNCF-SIV/grunt-nexus)
 
 > A plugin for downloading tarballed artifacts from Sonatype's Nexus repository.  
 > Tested under Linux and Windows.
@@ -96,8 +96,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Dependencies
 
-[![Dependency Status](https://david-dm.org/antoine-richard/grunt-nexus.svg)](https://david-dm.org/antoine-richard/grunt-nexus) 
-[![devDependency Status](https://david-dm.org/antoine-richard/grunt-nexus/dev-status.svg)](https://david-dm.org/antoine-richard/grunt-nexus#info=devDependencies)
+[![Dependency Status](https://david-dm.org/SNCF-SIV/grunt-nexus.svg)](https://david-dm.org/SNCF-SIV/grunt-nexus) 
+[![devDependency Status](https://david-dm.org/SNCF-SIV/grunt-nexus/dev-status.svg)](https://david-dm.org/SNCF-SIV/grunt-nexus#info=devDependencies)
 
 ## Release History
 
