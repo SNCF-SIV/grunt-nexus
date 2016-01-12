@@ -5,13 +5,14 @@ var q       = require('q');
 /**
  * Download a file from an uri
  */
-module.exports = function(uri, file) {
+module.exports = function(uri, file, strictSSL) {
   var deferred = q.defer();
 
   request({
     method: 'GET',
     uri: uri,
-    proxy: false
+    proxy: false,
+    strictSSL: strictSSL
   })
   .on('response', function (res) {
     if (res.statusCode < 200 || res.statusCode >= 300) {

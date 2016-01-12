@@ -1,7 +1,7 @@
 {
   "name": "grunt-nexus",
   "description": "A plugin for downloading tarballed artifacts from a Nexus repository",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "homepage": "https://github.com/SNCF-SIV/grunt-nexus",
   "author": "SNCF SIV",
   "repository": {
@@ -30,7 +30,7 @@
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "nock": "~0.48.1"
-  },  
+  },
   "keywords": [
     "gruntplugin",
     "nexus",

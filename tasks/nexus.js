@@ -22,6 +22,9 @@ module.exports = function(grunt) {
     if (data.extension.match(/^[^\.]/)) {            // ensure extension starts with a dot
       data.extension = '.' + data.extension;
     }
+    if (data.strictSSL === undefined) {
+        data.strictSSL = true;
+    }
 
     var done = this.async();
     var anErrorOccurred = false;
@@ -37,7 +40,7 @@ module.exports = function(grunt) {
       var dir = data.path + '/' + artifact.id;
       var tempPath = temp.path({prefix: 'grunt-nexus-', suffix: data.extension});
 
-      download(uri, tempPath)
+      download(uri, tempPath, data.strictSSL)
       .then(function() {
         return extract(tempPath, dir);
       })

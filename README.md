@@ -1,4 +1,4 @@
-# grunt-nexus v2.0.1 [![Build Status](https://travis-ci.org/SNCF-SIV/grunt-nexus.svg?branch=master)](https://travis-ci.org/SNCF-SIV/grunt-nexus)
+# grunt-nexus v2.0.x [![Build Status](https://travis-ci.org/SNCF-SIV/grunt-nexus.svg?branch=master)](https://travis-ci.org/SNCF-SIV/grunt-nexus)
 
 > A plugin for downloading tarballed artifacts from Sonatype's Nexus repository.  
 > Tested under Linux and Windows.
@@ -91,15 +91,23 @@ Default value: `.tar.gz`
 
 Artifacts extension.
 
+#### strictSSL (optional)
+Type: `String`
+Default value: `true`
+
+If true, requires SSL certificates be valid. Used in case you use a `baseUrl` with HTTPS protocol and this certicate is not strictly secure (self-signed for instance)
+
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Dependencies
 
-[![Dependency Status](https://david-dm.org/SNCF-SIV/grunt-nexus.svg)](https://david-dm.org/SNCF-SIV/grunt-nexus) 
+[![Dependency Status](https://david-dm.org/SNCF-SIV/grunt-nexus.svg)](https://david-dm.org/SNCF-SIV/grunt-nexus)
 [![devDependency Status](https://david-dm.org/SNCF-SIV/grunt-nexus/dev-status.svg)](https://david-dm.org/SNCF-SIV/grunt-nexus#info=devDependencies)
 
 ## Release History
-
+ * 2016-01-12   v2.0.3   Fixing issue with `strictSSL`. 
+ * 2016-01-11   v2.0.2   Added support for `strictSSL` option
  * 2014-11-24   v2.0.1   Improved the extension option to be more robust.
  * 2014-08-28   v2.0.0   First public release.
